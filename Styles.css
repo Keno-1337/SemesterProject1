@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,400;0,600;1,100;1,400;1,600&display=swap');
+
+:root {
+    --Main-font-family: 'montserrat';
+    /*--Main-font-family-secondary:;*/
+    --Main-fg-color:#F0CF97;
+    --Main-bg-color:#7C46A3;
+}
+/*--General begin-*/
+body {
+    background-size: cover;
+    background-attachment: fixed;
+}
+a:link {
+    text-decoration:none;
+}
+a:hover {
+    text-decoration:underline;
+    text-decoration-color: var(--Mintgreen-font-color);
+}
+h1,
+h2,
+h3 {
+    font-family: var(--Main-font-family);
+}
+/*--General end--*/
+
+/*--Index Begin--*/
+/*Section. Wraps over .header*/
+.title {
+    color: #000000;
+    max-width: 100%;
+    padding-bottom: 25px;
+    border-radius: 0% 0% 3% 3%;
+    filter: drop-shadow(0px 0px 25px 25px #4444dd);
+}
+.header {
+    background-size: cover;
+    max-height: auto;
+    max-width: 100%;
+}
+.slogan { /*Should delete this probably*/
+    margin-left: 26%;
+    margin-right: 26%;
+    border-radius: 5%;
+    background-color:  rgb(32, 6, 59,0.50);
+    backdrop-filter: blur(10px);
+    margin-bottom: 30px;
+    color: #FFFFFF;
+    text-align: center;
+    border-radius: 7% 7% 7% 7%;
+    background-color: rgba(32, 6, 59,0.85);
+}
+.highlight_smallfont {
+    color: #20063B;
+    font-size: 25px;
+}
+.ChamberDiv {
+    text-align: center;
+    position: relative;
+}
+.ChamberDiv img {
+    display: block;
+    max-width: 85%;
+    max-height: 600px;;
+    border-radius: 5%;
+    opacity: 0.92;
+}
+.SloganContainer {
+    left: 2%;
+    position: relative;
+    display: inline-block;
+    background-color: #000000;
+}
+.Slogan {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-10%, -10%);
+    text-align: center;
+    border-radius: 5%;
+    max-width: 185px;
+    z-index: 100;
+    color: red;
+    background-color: rgba(0, 132, 255, 0.7);
+}
+.Slogan h3 {
+    font-size: 15px;
+}
+/*--Index End--*/
+
+
+.navdiv {
+    z-index: 100;
+}
+
+nav,
+#menu-checkbox {
+    display: none;
+}
+#menu-checkbox:checked ~ nav {
+    display:block;
+}
+nav {
+    text-align: center;
+    z-index: 100;
+    border-radius: 10% 10% 10% 10%;
+    background: rgb(0, 0, 0);
+}
+nav a {
+    display:block;
+    color: var(--Main-fg-color);
+    padding: 10px 20px;
+}
+nav a:hover {
+    color: #7C46A3;
+
+}
+@media (min-width: 600px){
+    nav {
+        position: fixed;
+        display: flex;
+    }
+    /*.navdiv {
+        transform: translate(50%,-50%);
+    }*/
+    .hamburger-icon {
+        display:none;
+    }
+}
+.hamburger-icon {
+    /*position: static;*/
+    color: var(--Main-fg-color);
+}
+/* max-width = if size equal to or smaller than x
+    min-width = if size equal to or bigger than x*/
