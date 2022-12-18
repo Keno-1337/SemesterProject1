@@ -138,7 +138,7 @@ p {
     background-position:center center;
   }
   
-  @media (max-width: 740px) {
+  @media (max-width: 770px) {
     .grid-flex {
       height: 40em;
       display:flex;
