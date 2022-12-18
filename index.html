@@ -1,9 +1,11 @@
 <!DOCTYPE html>
-<html lang="en" class="index_bg">
+<html lang="en">
 <head>
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet"> 
+<link href="https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100;0,200;0,300;0,400;1,100&display=swap" rel="stylesheet">
+
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="SciWorld landing page" />
@@ -13,33 +15,44 @@
     </head>
     <body>
         <header>
-            <div class="navdiv">
+            <div class="NavContainer">
+                <div class="MoonBG">
+                    <img src="/Resources/images/Moon-edited-fixed.jpg" alt="Moon_phases_header">
+                    <div class="NavDiv">
+                        <div class="HeaderLogo">
+                            <h3>SciWorld</h3>
+                        </div>
             <input type="checkbox" id="menu-checkbox" />
             <label for="menu-checkbox" class="hamburger-icon"><i class="fas fa-bars"></i></label>
             <nav>
                 <a href="index.html">Home</a>
-                <a href="browse.html">Browse</a>
-                <a href="Contact.html">Contact</a>
-                <a href="Ourmission.html">Our History</a>
+                <a href="exhibitions.html">Exhibitions</a>
+                <a href="Contact.html">Visit</a>
+                <a href="about.html">About us</a>
             </nav>
         </div>
-        </header>
-<section class="title">
-    <a href="index.html"> <img src="/Resources/images/Moon-edited-fixed.jpg" alt="Moon_phases_header" class="header"></a>
-</section>
-
-<!--unsure if this is usable
-    <div class="slogan"> 
-<h1>Explore a <span class="highlight">universe</span> of games</h1>
-</div> -->
-<div class="SloganContainer">
-    <div class="ChamberDiv"> <!--Rename this here and CSS-->
-        <img src="/Resources/images/scientific-2040795_1280.jpg" alt="Woman working on pressurised chamber"> 
-    <div class="Slogan">
-        <h3>Come join us at the Community Science Museum where we’re committed to making science accessible to all.
-        </h3>
+    </div>
 </div>
-    </div>
-    </div>
+        </header>
+        <section class="MainSection">
+        <div class="grid-flex">
+            <div class="col col-image" 
+            style="background-image: url(/Resources/images/scientific-2040795_1280.jpg); float: right;" alt="Woman working on pressurised chamber">
+          
+            </div>
+            <div class="col col-text col-left">
+              <div class="Aligner-item">
+                <div class="Slogan">
+                    <h3>Come join us at the Community Science Museum where we're committed to making science accessible to all
+                    </h3>
+              </div>
+            </div>
+          </div>
+
+<!--<footer>
+    <div class="FooterName">
+    © Marcus Ellingsen 2022
+</div>
+</footer>-->
 </body>
 </html>

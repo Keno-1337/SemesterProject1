@@ -1,99 +1,182 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,400;0,600;1,100;1,400;1,600&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100;0,200;0,300;0,400;1,100&display=swap');
 :root {
     --Main-font-family: 'montserrat';
-    /*--Main-font-family-secondary:;*/
+    --sec-font-family:'Overpass';
     --Main-fg-color:#F0CF97;
     --Main-bg-color:#7C46A3;
+    --comp-color-darkgreen:#4EA372;
+    --comp-color-mintgreen:#67F0A0;
+    --comp-color-lightpurple:#C280F0;
+    --comp-color-orange:#BF5427;
 }
 /*--General begin-*/
 body {
+    margin: 0px 0px 0px 0px;
     background-size: cover;
     background-attachment: fixed;
+    background-color: var(--Main-bg-color);
+}
+.MainSection {
+    margin: 25px 85px 0px 85px;
 }
 a:link {
     text-decoration:none;
 }
 a:hover {
     text-decoration:underline;
-    text-decoration-color: var(--Mintgreen-font-color);
 }
 h1,
 h2,
 h3 {
     font-family: var(--Main-font-family);
 }
+p {
+    font-family: var(--sec-font-family);
+    font-weight: 400;
+}
+.WhiteBG {
+    background-color: rgba(255,255,255,0.25);
+}
 /*--General end--*/
 
 /*--Index Begin--*/
-/*Section. Wraps over .header*/
-.title {
-    color: #000000;
-    max-width: 100%;
-    padding-bottom: 25px;
-    border-radius: 0% 0% 3% 3%;
-    filter: drop-shadow(0px 0px 25px 25px #4444dd);
+.NavContainer {
+    background-color: #0E0E0C;
 }
-.header {
-    background-size: cover;
-    max-height: auto;
-    max-width: 100%;
+.MoonBG {
+    position: relative;
+    /*display: inline-block;*/
 }
-.slogan { /*Should delete this probably*/
-    margin-left: 26%;
-    margin-right: 26%;
-    border-radius: 5%;
-    background-color:  rgb(32, 6, 59,0.50);
-    backdrop-filter: blur(10px);
-    margin-bottom: 30px;
-    color: #FFFFFF;
-    text-align: center;
-    border-radius: 7% 7% 7% 7%;
-    background-color: rgba(32, 6, 59,0.85);
+.MoonBG img {
+    display: block;
+    width: 100%;
+    height: 90px;
 }
-.highlight_smallfont {
+.HeaderLogo {
+    color: var(--Main-fg-color);
+    position:absolute;
+    top: 17%;
+    left: 1%;
+}
+.NavDiv a {
+    font-family: var(--sec-font-family);
+    font-weight: 200;
+}
+/*.highlight_smallfont {
     color: #20063B;
     font-size: 25px;
-}
+}*/
 .ChamberDiv {
-    text-align: center;
+    background-color:var(--comp-color-lightpurple);
     position: relative;
+    display:flex;
+    justify-content: center;
 }
 .ChamberDiv img {
-    display: block;
-    max-width: 85%;
-    max-height: 600px;;
+    background-color: #7C46A3;
+    padding-top:20px;
+    width: 75%;
     border-radius: 5%;
     opacity: 0.92;
 }
-.SloganContainer {
-    left: 2%;
-    position: relative;
-    display: inline-block;
-    background-color: #000000;
+.Slogan h3 {
+    font-size: 1.3em;
+    font-family:var(--sec-font-family);
+    font-weight: 400;
 }
-.Slogan {
+.IndexSectionTwo {
+    display: flexbox;
+    padding-top: 15px;
+    position: relative;
+    font-family: var(--main-font-family);
+    font-weight: 400;
+    
+}
+.IndexSectionTwo img {
+    border-radius: 5%;
+    float: left;
+    width: 45%;
+}
+.IndexSectionTwo button {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-10%, -10%);
+    transform: translate(20%, 100%);
     text-align: center;
-    border-radius: 5%;
-    max-width: 185px;
-    z-index: 100;
-    color: red;
-    background-color: rgba(0, 132, 255, 0.7);
 }
-.Slogan h3 {
-    font-size: 15px;
+.HumanHistory {
+    position: absolute;
 }
 /*--Index End--*/
+/*--Exhibitions start--*/
+.col-text {
+    height:20em;
+  }
+  .grid-flex {
+    display: flex;
+    flex-grow: 1;
+    flex-direction: row; 
 
-
-.navdiv {
-    z-index: 100;
+  }
+  .col {
+    flex: 1;
+  }
+  .col-left {
+    order: -1;
+  }
+  .col-text{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .Aligner-item {
+    width: 60%;
+  }
+  .col-image {
+    background-size: cover;
+    background-position:center center;
+  }
+  
+  @media (max-width: 740px) {
+    .grid-flex {
+      height: 40em;
+      display:flex;
+      flex-direction: column; 
+     }
+    .col {
+      order:vertical;
+    }
+    .col-left {
+      order: 0;
+    }
+    .col-text div p {
+      padding: 1em;
+    }
+    .Aligner-item {
+      width: 90%;
+    }
+  }
+/*--Exhibitions end--*/  
+/*--Contact Start--*/
+.MapsFrame {
+    height: 90%;
+    width: 90%;
 }
-
+.MuseumInfo {
+    font-size: 17px;
+}
+.hours {
+    max-width: 90%;
+}
+/*--Contact end--*/
+.FooterName {
+    background-color: var(--comp-color-orange);
+    display: flex;
+    justify-content: center;
+    font-family: var(--Main-font-family);
+    font-weight: 400;
+}
 nav,
 #menu-checkbox {
     display: none;
@@ -103,9 +186,8 @@ nav,
 }
 nav {
     text-align: center;
-    z-index: 100;
-    border-radius: 10% 10% 10% 10%;
-    background: rgb(0, 0, 0);
+    z-index: 500;
+    justify-content: center;
 }
 nav a {
     display:block;
@@ -113,24 +195,28 @@ nav a {
     padding: 10px 20px;
 }
 nav a:hover {
-    color: #7C46A3;
+    color:var(--comp-color-orange);
 
 }
 @media (min-width: 600px){
     nav {
-        position: fixed;
         display: flex;
+        font-weight: bold;
     }
-    /*.navdiv {
-        transform: translate(50%,-50%);
-    }*/
     .hamburger-icon {
         display:none;
     }
 }
 .hamburger-icon {
-    /*position: static;*/
+    position: absolute;
     color: var(--Main-fg-color);
+    top: 75%;
+    right: 1%;
+}
+@media (max-width: 325px){
+    .HeaderLogo {
+        top: -20%;
+    }
 }
 /* max-width = if size equal to or smaller than x
     min-width = if size equal to or bigger than x*/
