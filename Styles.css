@@ -9,6 +9,7 @@
     --comp-color-mintgreen:#67F0A0;
     --comp-color-lightpurple:#C280F0;
     --comp-color-orange:#BF5427;
+    --comp-color-almostblack:#070D0D;
 }
 /*--General begin-*/
 body {
@@ -37,6 +38,10 @@ p {
 }
 .WhiteBG {
     background-color: rgba(255,255,255,0.25);
+}
+.TitleHeader {
+    text-align: center;
+    color: var(--comp-color-almostblack);
 }
 /*--General end--*/
 
