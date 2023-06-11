@@ -1,6 +1,6 @@
 # SemesterProject1
+![image](https://github.com/Keno-1337/SemesterProject1/assets/114931684/2351cb2f-de8f-4328-ae37-639812192f4f)
 
-![image](https://user-images.githubusercontent.com/52622303/164316813-4b12d99f-aeb7-4069-85cf-e72b3a50ac99.png)
 
 A website created as part of my front-end developement studies.
 
