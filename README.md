@@ -16,7 +16,6 @@ You have been provided media assets as text and images. It is for you to decide 
 
 ## Built With
 
-You can list a the tech stack that you've used over here
 
 - [Visual studio vode](https://code.visualstudio.com/)
 ## langauges
