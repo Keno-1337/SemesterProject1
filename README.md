@@ -20,6 +20,8 @@ You have been provided media assets as text and images. It is for you to decide 
 - [Visual studio vode](https://code.visualstudio.com/)
 ## langauges
 HTML & CSS
+## Hosted On
+[Netlify](https://netlify.com/)
 
 ## Contact
 E-mail:
